@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+}
+.flex-container{
+
+    display: flex;
+}
+
+.flex-container *{
+    width: 25%;
+}
+/* make the bottom curved of item1*/
+.item1{
+    background: linear-gradient(to top,hsl(271, 36%, 24%),hsl(289, 100%, 72%));
+    height: 600px;
+    display: absolute;
+    border-bottom-left-radius: 160px 100px;
+    border-bottom-right-radius: 180px 180px;
+    width: 27%;
+
+    
+}
+
+.item2{
+    margin-top: 100px;
+    display: relastive;
+    height: 450px;
+    background-color: hsl(270, 20%, 96%);
+    border-radius: 20px;
+    width: 20%;
+    transform: translateX(-20%);
+}

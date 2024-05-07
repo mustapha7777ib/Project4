@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    background-color: hsl(270, 20%, 96%);
 }
 .flex-container{
 
@@ -9,11 +10,9 @@ body{
 .flex-container *{
     width: 25%;
 }
-/* make the bottom curved of item1*/
 .item1{
     background: linear-gradient(to top,hsl(271, 36%, 24%),hsl(289, 100%, 72%));
     height: 600px;
-    display: absolute;
     border-bottom-left-radius: 160px 100px;
     border-bottom-right-radius: 180px 180px;
     width: 27%;
@@ -23,10 +22,66 @@ body{
 
 .item2{
     margin-top: 100px;
-    display: relastive;
+    display: flex;
+    flex-direction: column;
     height: 450px;
-    background-color: hsl(270, 20%, 96%);
+    background-color: hsl(0, 0%, 100%); 
     border-radius: 20px;
-    width: 20%;
+    padding: 12.5px;
+    width: 230px;
     transform: translateX(-20%);
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.item2a{
+    height: 20%;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(191,64,255) !important;
+    background: linear-gradient(156deg,hsl(271, 36%, 24%),hsl(289, 100%, 72%));
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.item2a::after {
+    content: '';
+    position: absolute;
+    bottom: 50%;
+    width: 140px;
+    left: 0;
+    right: 0;
+    top: -20px;
+    height: 45px;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: #fff !important;
+}
+.item2b{
+    height: 85%;
+    width: 100%;
+    background-color: hsl(270, 20%, 96%);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.a{
+    margin-top: 20px;
+    display: flex;
+    padding-left: 20px
+}
+.b{
+    font-size: 7px;
+    color: white;
+    display: flex;
+    padding-left: 10px;
+    flex-direction: column;
+    white-space: nowrap;
 }
